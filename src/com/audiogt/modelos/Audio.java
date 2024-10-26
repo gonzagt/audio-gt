@@ -1,19 +1,17 @@
-package com.audiogt.principal;
-
-import java.time.Duration;
+package com.audiogt.modelos;
 
 public class Audio {
     private String titulo;
     private int duracion;
     private int totalDeReproducciones;
-    private int meGusta = 0;
+    private int totalDeMegusta = 0;
     private int clasificacion;
 
-    private void meGusta() {
-        this.meGusta++;
+    public void meGusta() {
+        this.totalDeMegusta++;
     }
 
-    private void reproducir() {
+    public void reproducir() {
         this.totalDeReproducciones++;
     }
 
@@ -41,12 +39,12 @@ public class Audio {
         this.totalDeReproducciones = totalDeReproducciones;
     }
 
-    public int getMeGusta() {
-        return meGusta;
+    public int getTotalDeMegusta() {
+        return totalDeMegusta;
     }
 
-    public void setMeGusta(int meGusta) {
-        this.meGusta = meGusta;
+    public void setTotalDeMegusta(int totalDeMegusta) {
+        this.totalDeMegusta = totalDeMegusta;
     }
 
     public int getClasificacion() {
